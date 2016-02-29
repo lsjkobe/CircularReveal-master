@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <io.codetail.circualrevealsample.CardViewPlus
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_lsj_test"
+        style="@style/CardView"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/example_raw_image"
+            android:layout_gravity="center"/>
+
+    </io.codetail.circualrevealsample.CardViewPlus>
+    <io.codetail.circualrevealsample.CardViewPlus
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_lsj_test2"
+        style="@style/CardView"
+        app:cardBackgroundColor="#22ddbb"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+        <VideoView
+            android:id="@+id/video_mp4_play"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </io.codetail.circualrevealsample.CardViewPlus>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_lsj_test"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="10dp"
+        app:rippleColor="#efefef"
+        app:elevation="6dp"
+        app:pressedTranslationZ="4dp"
+        android:src="@drawable/ic_refresh_white_24dp"
+        android:scaleType="centerInside"
+        android:onClick="FABOnclick"/>
+</io.codetail.widget.RevealFrameLayout>
+
